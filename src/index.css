@@ -70,7 +70,7 @@ button:focus-visible {
 .button-action:hover {
   background-color: #20dc49;
   border-color: #20dc49;
-  color: white;
+  color: black;
 }
 .button-action:focus,
 .button-action:focus-visible {
@@ -116,6 +116,10 @@ input {
 /* input */
 
 @media screen and (max-width: 500px) {
+  body {
+    height: auto;
+    margin: 50px 0;
+  }
   .container {
     max-width: 90%;
     margin: 0 auto;
