@@ -21,9 +21,9 @@ export default function Login() {
           </button>
         </div>
       </div>
-      <div className="flex w-fufll items-center justify-between py-10">
+      <div className="flex items-center justify-between py-10 gap-8">
         <svg
-          width="130"
+          className="flex-1"
           height="1"
           viewBox="0 0 130 1"
           fill="none"
@@ -34,7 +34,7 @@ export default function Login() {
 
         <p className="text-[14px]">Or continue with</p>
         <svg
-          width="130"
+          className="flex-1"
           height="1"
           viewBox="0 0 130 1"
           fill="none"
@@ -52,9 +52,9 @@ export default function Login() {
           <img src={hide_password} alt="hide" onClick={() => {}} />
         </div>
       </div>
-        <span className="flex justify-end text-[#D93F21] text-[14px] mb-10 mt-4">
-          Recover Password
-        </span>
+      <span className="flex justify-end text-[#D93F21] text-[14px] mb-10 mt-4">
+        Recover Password
+      </span>
       <button className="button-action">Log In</button>
     </div>
   );

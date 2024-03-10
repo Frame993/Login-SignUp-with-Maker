@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  width: 400px;
+  max-width: 400px;
 }
 
 /* button */
@@ -65,7 +65,7 @@ button:focus-visible {
   font-family: inherit;
   background-color: transparent;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s;
 }
 .button-action:hover {
   background-color: #20dc49;
@@ -85,7 +85,7 @@ button:focus-visible {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 400px;
+  max-width: 400px;
   height: 70px;
   padding: 0.6em 2em;
   border-radius: 8px;
@@ -114,3 +114,11 @@ input {
   font-family: inherit;
 }
 /* input */
+
+@media screen and (max-width: 500px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+}
