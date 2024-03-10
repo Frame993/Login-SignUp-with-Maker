@@ -1,11 +1,12 @@
 interface Props {
+    name?: string
     action: () => void
 }
 
-export default function Submit({action} : Props) {
+export default function Submit({action, name} : Props) {
   return (
     <>
-      <button className="button-action" onClick={action}>Log In</button>
+      <button className="button-action" onClick={action}>{name}</button>
     </>
   )
 }

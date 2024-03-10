@@ -22,7 +22,7 @@ export default function Login() {
       <span className="flex justify-end text-[#D93F21] text-[14px] mb-10 mt-4">
         Recover Password
       </span>
-      <Submit action={() => {console.log("Login")}}/>
+      <Submit name="Login" action={() => {console.log("Login")}}/>
     </div>
   );
 }

@@ -29,7 +29,7 @@ export default function Signup() {
       <span className="flex justify-end text-[#D93F21] text-[14px] mb-10 mt-4">
         The password must be at least 8 characters
       </span>
-      <Submit action={() => {console.log("Signup")}} />
+      <Submit name="Signup" action={() => {console.log("Signup")}} />
     </div>
   );
 }
