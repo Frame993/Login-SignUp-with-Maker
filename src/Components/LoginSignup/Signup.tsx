@@ -1,4 +1,3 @@
-
 import Submit from "./Submit";
 import StartWithMaker from "./StartWithMaker";
 import Divider from "./Divider";
@@ -18,17 +17,22 @@ export default function Signup() {
         </div>
         <div className="input flex">
           <input type="password" placeholder="Password" />
-          <HideUnhide />
+          <HideUnhide passwordState={() => {console.log("hide/show")}}/>
         </div>
         <div className="input flex">
           <input type="password" placeholder="Confirm Password" />
-          <HideUnhide />
+          <HideUnhide passwordState={() => {console.log("hide/show")}}/>
         </div>
       </div>
       <span className="flex justify-end text-[#D93F21] text-[14px] mt-4">
         The password must be at least 8 characters
       </span>
-      <Submit name="Create Account" action={() => {console.log("Signup")}} />
+      <Submit
+        name="Create Account"
+        SubmitAction={() => {
+          console.log("Signup");
+        }}
+      />
     </div>
   );
 }
