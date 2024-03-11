@@ -19,7 +19,7 @@ export default function Login() {
           <img src={hide_password} alt="hide" onClick={() => {}} />
         </div>
       </div>
-      <span className="flex justify-end text-[#D93F21] text-[14px] mb-10 mt-4">
+      <span className="flex justify-end text-[#D93F21] text-[14px] mt-4">
         Recover Password
       </span>
       <Submit name="Login" action={() => {console.log("Login")}}/>

@@ -6,7 +6,7 @@ interface Props {
 export default function Submit({action, name} : Props) {
   return (
     <>
-      <button className="button-action" onClick={action}>{name}</button>
+      <button className="button-action mt-12" onClick={action}>{name}</button>
     </>
   )
 }
