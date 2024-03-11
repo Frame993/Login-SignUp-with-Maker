@@ -2,21 +2,27 @@
 import WelcomeBack from "./WelcomeBack";
 import Divider from "./Divider";
 import Submit from "./Submit";
+import HideUnhide from "./HideUnhide";
 
-import hide_password from "../assets/hide.svg";
 
 export default function Login() {
+
+  const handleChange = (e: any) => {
+    e.preventDefault();
+    console.log(e.target.value);
+  }
+
   return (
     <div className="container flex flex-col">
       <WelcomeBack />
       <Divider />
       <div className="inputs-container flex flex-col gap-8">
         <div className="input flex">
-          <input type="email" placeholder="Email" />
+          <input type="email" placeholder="Email" onChange={handleChange}/>
         </div>
         <div className="input flex">
           <input type="password" placeholder="Password" />
-          <img src={hide_password} alt="hide" onClick={() => {}} />
+          <HideUnhide />
         </div>
       </div>
       <span className="flex justify-end text-[#D93F21] text-[14px] mt-4">

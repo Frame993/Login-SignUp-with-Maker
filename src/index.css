@@ -92,7 +92,6 @@ button:focus-visible {
   color: #5A5A5A;
   border: 1px solid #dedede;
   background-color: #fff;
-  cursor: pointer;
   transition: border-color 0.25s;
 }
 .input:hover {
