@@ -10,11 +10,16 @@ export default function App() {
 
   return (
     <>
-      {action === "Signup" ? <Login /> : null}
-      {action === "Login" ? <Signup /> : null}
+      {action === "Signup" ? <Login /> : <Signup />}
       <div className="text-center pt-12">
         <p>
-          Don’t have an account? <span onClick={handleClick} className="text-[#20dc49] font-medium cursor-pointer">{action}</span>
+          Don’t have an account?{" "}
+          <span
+            onClick={handleClick}
+            className="text-[#20dc49] font-medium cursor-pointer"
+          >
+            {action}
+          </span>
         </p>
       </div>
     </>
