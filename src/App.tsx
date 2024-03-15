@@ -11,7 +11,7 @@ export default function App() {
   return (
     <>
       {action === "Signup" ? <Login /> : <Signup />}
-      <div className="text-center pt-12">
+      <div className="text-center py-8">
         <p>
           Don’t have an account?{" "}
           <span

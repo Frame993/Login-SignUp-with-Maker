@@ -1,7 +1,7 @@
 
 export default function Divider() {
   return (
-    <div className="flex items-center justify-between py-10 gap-8">
+    <div className="flex items-center justify-between py-8 gap-8">
       <svg
         className="flex-1"
         height="1"

@@ -10,7 +10,7 @@ export default function Login() {
   };
 
   return (
-    <div className="container flex flex-col">
+    <div className="container flex flex-col md:mt-8">
       <WelcomeBack />
       <Divider />
       <div className="inputs-container flex flex-col gap-8">

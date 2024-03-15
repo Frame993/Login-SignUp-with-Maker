@@ -5,7 +5,7 @@ import HideUnhide from "./HideUnhide";
 
 export default function Signup() {
   return (
-    <div className="container flex flex-col">
+    <div className="container flex flex-col mt-8">
       <StartWithMaker />
       <Divider />
       <div className="inputs-container flex flex-col gap-4">
